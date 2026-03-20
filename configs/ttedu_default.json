@@ -1,0 +1,75 @@
+{
+  "seed": 42,
+  "joint_names": [
+    "right_ankle",
+    "right_knee",
+    "right_hip",
+    "left_hip",
+    "left_knee",
+    "left_ankle",
+    "pelvis",
+    "thorax",
+    "upper_neck",
+    "head_top",
+    "right_wrist",
+    "right_elbow",
+    "right_shoulder",
+    "left_shoulder",
+    "left_elbow",
+    "left_wrist"
+  ],
+  "physical_edges": [
+    [0, 1],
+    [1, 2],
+    [2, 6],
+    [3, 6],
+    [3, 4],
+    [4, 5],
+    [2, 3],
+    [6, 7],
+    [7, 8],
+    [8, 9],
+    [7, 12],
+    [12, 11],
+    [11, 10],
+    [7, 13],
+    [13, 14],
+    [14, 15],
+    [12, 13]
+  ],
+  "data": {
+    "train_path": "data/demo/train.npz",
+    "val_path": "data/demo/val.npz",
+    "test_path": "data/demo/test.npz",
+    "num_joints": 16,
+    "sequence_length": 81,
+    "input_dim": 3,
+    "num_classes": 4
+  },
+  "model": {
+    "hidden_dim": 256,
+    "spatial_layers": 4,
+    "temporal_layers": 3,
+    "num_heads": 8,
+    "dropout": 0.1,
+    "ff_multiplier": 4,
+    "max_len": 81,
+    "embedding_dim": 128
+  },
+  "train": {
+    "batch_size": 32,
+    "epochs": 100,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "label_smoothing": 0.0,
+    "patience": 15,
+    "num_workers": 0,
+    "device": "auto"
+  },
+  "loss": {
+    "regression_weight": 1.0,
+    "classification_weight": 0.5,
+    "contrastive_weight": 0.3,
+    "temperature": 0.07
+  }
+}

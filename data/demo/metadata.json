@@ -1,0 +1,33 @@
+{
+  "joint_names": [
+    "right_ankle",
+    "right_knee",
+    "right_hip",
+    "left_hip",
+    "left_knee",
+    "left_ankle",
+    "pelvis",
+    "thorax",
+    "upper_neck",
+    "head_top",
+    "right_wrist",
+    "right_elbow",
+    "right_shoulder",
+    "left_shoulder",
+    "left_elbow",
+    "left_wrist"
+  ],
+  "action_names": [
+    "forehand_drive",
+    "backhand_push",
+    "forehand_loop"
+  ],
+  "label_names": [
+    "poor",
+    "moderate",
+    "good",
+    "excellent"
+  ],
+  "sequence_length": 81,
+  "note": "Synthetic demonstration data generated to verify the code path. Replace with TTEdu skeleton sequences for paper experiments."
+}

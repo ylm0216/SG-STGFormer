@@ -1,0 +1,76 @@
+{
+  "dataset_name": "TTEdu_example",
+  "note": "This is a generated example dataset that mirrors the manuscript-level TTEdu structure. It is not the real self-built dataset and must not be reported as real experimental data.",
+  "total_samples": 720,
+  "split_sizes": {
+    "train": 504,
+    "val": 108,
+    "test": 108
+  },
+  "action_counts_target": {
+    "forehand_drive": 280,
+    "backhand_push": 240,
+    "forehand_loop": 200
+  },
+  "skill_counts_target": {
+    "beginner": 288,
+    "intermediate": 252,
+    "advanced": 180
+  },
+  "gender_counts_target": {
+    "male": 396,
+    "female": 324
+  },
+  "joint_names": [
+    "right_ankle",
+    "right_knee",
+    "right_hip",
+    "left_hip",
+    "left_knee",
+    "left_ankle",
+    "pelvis",
+    "thorax",
+    "upper_neck",
+    "head_top",
+    "right_wrist",
+    "right_elbow",
+    "right_shoulder",
+    "left_shoulder",
+    "left_elbow",
+    "left_wrist"
+  ],
+  "action_names": [
+    "forehand_drive",
+    "backhand_push",
+    "forehand_loop"
+  ],
+  "skill_levels": [
+    "beginner",
+    "intermediate",
+    "advanced"
+  ],
+  "genders": [
+    "male",
+    "female"
+  ],
+  "sequence_length": 81,
+  "feature_channels": [
+    "x",
+    "y",
+    "confidence"
+  ],
+  "observed_overall_action_counts": {
+    "backhand_push": 240,
+    "forehand_drive": 280,
+    "forehand_loop": 200
+  },
+  "observed_overall_skill_counts": {
+    "advanced": 180,
+    "beginner": 288,
+    "intermediate": 252
+  },
+  "observed_overall_gender_counts": {
+    "female": 324,
+    "male": 396
+  }
+}
